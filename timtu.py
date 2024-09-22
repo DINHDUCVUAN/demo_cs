@@ -1,9 +1,11 @@
 products = ["cat", "banana", "batman", "car", "cow", "alibaba"]  
-timtu = input("Nhập từ: ")
-found_items = False 
+index = -1  
+timtu=input("Nhập từ")
 for i in range(len(products)):  
-    if timtu in products[i]:  
-        print(f"Từ là: {products[i]}, Index: {i}")  
-        found_items=True
-if not found_items:  
-    print(f"Không có từ '{timtu}' trong danh sách.")
+    if products[i].startswith(timtu):  
+        index = i  
+        print(f"Từ là: {products[i]}, Index: {index}")  
+        break  
+
+if index == -1:  
+    print(f"Ko có từ {timtu} trong danh sách")
