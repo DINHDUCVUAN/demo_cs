@@ -6,6 +6,5 @@ for i in range(len(products)):
         index = i  
         print(f"Từ là: {products[i]}, Index: {index}")  
         break  
-
 if index == -1:  
     print(f"Ko có từ {timtu} trong danh sách")
